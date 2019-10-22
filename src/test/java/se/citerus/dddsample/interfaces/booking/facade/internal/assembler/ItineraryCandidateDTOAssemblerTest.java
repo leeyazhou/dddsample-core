@@ -19,12 +19,12 @@ import java.util.List;
 
 import org.junit.Test;
 
-import se.citerus.dddsample.domain.model.cargo.Itinerary;
-import se.citerus.dddsample.domain.model.cargo.Leg;
-import se.citerus.dddsample.domain.model.location.Location;
-import se.citerus.dddsample.domain.model.location.LocationRepository;
-import se.citerus.dddsample.domain.model.location.UnLocode;
-import se.citerus.dddsample.domain.model.voyage.VoyageRepository;
+import se.citerus.dddsample.domain.model.cargo.vo.Itinerary;
+import se.citerus.dddsample.domain.model.cargo.vo.Leg;
+import se.citerus.dddsample.domain.model.location.entity.Location;
+import se.citerus.dddsample.domain.model.location.repository.LocationRepository;
+import se.citerus.dddsample.domain.model.location.vo.UnLocode;
+import se.citerus.dddsample.domain.model.voyage.repository.VoyageRepository;
 import se.citerus.dddsample.infrastructure.persistence.inmemory.VoyageRepositoryInMem;
 import se.citerus.dddsample.interfaces.booking.facade.dto.LegDTO;
 import se.citerus.dddsample.interfaces.booking.facade.dto.RouteCandidateDTO;

@@ -9,7 +9,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-import se.citerus.dddsample.domain.model.location.Location;
+import se.citerus.dddsample.domain.model.location.entity.Location;
 import se.citerus.dddsample.interfaces.booking.facade.dto.LocationDTO;
 
 public class LocationDTOAssemblerTest {

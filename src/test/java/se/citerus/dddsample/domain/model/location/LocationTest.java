@@ -5,6 +5,9 @@ import static org.assertj.core.api.Assertions.fail;
 
 import org.junit.Test;
 
+import se.citerus.dddsample.domain.model.location.entity.Location;
+import se.citerus.dddsample.domain.model.location.vo.UnLocode;
+
 public class LocationTest {
 
   @Test

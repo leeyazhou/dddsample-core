@@ -20,13 +20,13 @@
                     <table>
                         <tr>
                             <td>
-                                Enter your tracking id:
+                                输入货物ID:
                             </td>
                             <td>
                                 <input th:field="*{trackingId}" id="idInput"/>
                             </td>
                             <td>
-                                <input type="submit" value="Track!"/>
+                                <input type="submit" value="查询"/>
                             </td>
                         </tr>
                         <tr>
@@ -40,7 +40,7 @@
                 </form>
             </div>
 
-            <p th:if="${cargo == null}"><em>Hint: try tracking "ABC123" or "JKL567".</em></p>
+            <p th:if="${cargo == null}"><em>提示: 尝试查询"ABC123"或者"JKL567".</em></p>
 
             <div id="result" th:if="${cargo != null}">
                 <h2>Cargo

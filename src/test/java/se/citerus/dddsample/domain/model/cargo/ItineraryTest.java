@@ -18,10 +18,15 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
+import se.citerus.dddsample.domain.model.cargo.entity.Cargo;
+import se.citerus.dddsample.domain.model.cargo.vo.Itinerary;
+import se.citerus.dddsample.domain.model.cargo.vo.Leg;
+import se.citerus.dddsample.domain.model.cargo.vo.RouteSpecification;
+import se.citerus.dddsample.domain.model.cargo.vo.TrackingId;
 import se.citerus.dddsample.domain.model.handling.HandlingEvent;
-import se.citerus.dddsample.domain.model.voyage.CarrierMovement;
-import se.citerus.dddsample.domain.model.voyage.Voyage;
-import se.citerus.dddsample.domain.model.voyage.VoyageNumber;
+import se.citerus.dddsample.domain.model.voyage.entity.Voyage;
+import se.citerus.dddsample.domain.model.voyage.vo.CarrierMovement;
+import se.citerus.dddsample.domain.model.voyage.vo.VoyageNumber;
 
 public class ItineraryTest {
   private final CarrierMovement abc = new CarrierMovement(SHANGHAI, ROTTERDAM, new Date(), new Date());

@@ -15,9 +15,9 @@ import java.util.TimeZone;
 import org.junit.Test;
 import org.springframework.context.support.StaticApplicationContext;
 
-import se.citerus.dddsample.domain.model.cargo.Cargo;
-import se.citerus.dddsample.domain.model.cargo.RouteSpecification;
-import se.citerus.dddsample.domain.model.cargo.TrackingId;
+import se.citerus.dddsample.domain.model.cargo.entity.Cargo;
+import se.citerus.dddsample.domain.model.cargo.vo.RouteSpecification;
+import se.citerus.dddsample.domain.model.cargo.vo.TrackingId;
 import se.citerus.dddsample.domain.model.handling.HandlingEvent;
 import se.citerus.dddsample.domain.model.handling.HandlingHistory;
 

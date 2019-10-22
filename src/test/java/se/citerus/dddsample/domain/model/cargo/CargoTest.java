@@ -1,10 +1,10 @@
 package se.citerus.dddsample.domain.model.cargo;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static se.citerus.dddsample.domain.model.cargo.RoutingStatus.MISROUTED;
-import static se.citerus.dddsample.domain.model.cargo.RoutingStatus.NOT_ROUTED;
-import static se.citerus.dddsample.domain.model.cargo.RoutingStatus.ROUTED;
-import static se.citerus.dddsample.domain.model.cargo.TransportStatus.NOT_RECEIVED;
+import static se.citerus.dddsample.domain.model.cargo.vo.RoutingStatus.MISROUTED;
+import static se.citerus.dddsample.domain.model.cargo.vo.RoutingStatus.NOT_ROUTED;
+import static se.citerus.dddsample.domain.model.cargo.vo.RoutingStatus.ROUTED;
+import static se.citerus.dddsample.domain.model.cargo.vo.TransportStatus.NOT_RECEIVED;
 import static se.citerus.dddsample.domain.model.location.SampleLocations.GOTHENBURG;
 import static se.citerus.dddsample.domain.model.location.SampleLocations.HAMBURG;
 import static se.citerus.dddsample.domain.model.location.SampleLocations.HANGZOU;
@@ -29,11 +29,16 @@ import org.junit.Before;
 import org.junit.Test;
 
 import se.citerus.dddsample.application.util.DateTestUtil;
+import se.citerus.dddsample.domain.model.cargo.entity.Cargo;
+import se.citerus.dddsample.domain.model.cargo.vo.Itinerary;
+import se.citerus.dddsample.domain.model.cargo.vo.Leg;
+import se.citerus.dddsample.domain.model.cargo.vo.RouteSpecification;
+import se.citerus.dddsample.domain.model.cargo.vo.TrackingId;
 import se.citerus.dddsample.domain.model.handling.HandlingEvent;
 import se.citerus.dddsample.domain.model.handling.HandlingHistory;
-import se.citerus.dddsample.domain.model.location.Location;
-import se.citerus.dddsample.domain.model.voyage.Voyage;
-import se.citerus.dddsample.domain.model.voyage.VoyageNumber;
+import se.citerus.dddsample.domain.model.location.entity.Location;
+import se.citerus.dddsample.domain.model.voyage.entity.Voyage;
+import se.citerus.dddsample.domain.model.voyage.vo.VoyageNumber;
 
 public class CargoTest {
 

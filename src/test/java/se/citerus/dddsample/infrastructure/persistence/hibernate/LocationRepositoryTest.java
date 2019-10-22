@@ -18,9 +18,9 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import se.citerus.dddsample.application.util.SampleDataGenerator;
-import se.citerus.dddsample.domain.model.location.Location;
-import se.citerus.dddsample.domain.model.location.LocationRepository;
-import se.citerus.dddsample.domain.model.location.UnLocode;
+import se.citerus.dddsample.domain.model.location.entity.Location;
+import se.citerus.dddsample.domain.model.location.repository.LocationRepository;
+import se.citerus.dddsample.domain.model.location.vo.UnLocode;
 
 @RunWith(SpringRunner.class)
 @ContextConfiguration(value = {"/context-infrastructure-persistence.xml"})

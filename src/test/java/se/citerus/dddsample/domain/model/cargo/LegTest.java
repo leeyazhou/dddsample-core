@@ -4,6 +4,8 @@ import static org.assertj.core.api.Assertions.fail;
 
 import org.junit.Test;
 
+import se.citerus.dddsample.domain.model.cargo.vo.Leg;
+
 public class LegTest {
 
   @Test

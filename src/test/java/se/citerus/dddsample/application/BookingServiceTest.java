@@ -23,11 +23,11 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import se.citerus.dddsample.application.impl.BookingServiceImpl;
-import se.citerus.dddsample.domain.model.cargo.Cargo;
-import se.citerus.dddsample.domain.model.cargo.CargoRepository;
-import se.citerus.dddsample.domain.model.cargo.TrackingId;
-import se.citerus.dddsample.domain.model.location.LocationRepository;
-import se.citerus.dddsample.domain.model.location.UnLocode;
+import se.citerus.dddsample.domain.model.cargo.entity.Cargo;
+import se.citerus.dddsample.domain.model.cargo.repository.CargoRepository;
+import se.citerus.dddsample.domain.model.cargo.vo.TrackingId;
+import se.citerus.dddsample.domain.model.location.repository.LocationRepository;
+import se.citerus.dddsample.domain.model.location.vo.UnLocode;
 import se.citerus.dddsample.domain.service.RoutingService;
 
 public class BookingServiceTest {

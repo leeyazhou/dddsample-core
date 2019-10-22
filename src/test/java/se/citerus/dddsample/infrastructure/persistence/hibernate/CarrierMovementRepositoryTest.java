@@ -17,9 +17,9 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import se.citerus.dddsample.application.util.SampleDataGenerator;
-import se.citerus.dddsample.domain.model.voyage.Voyage;
-import se.citerus.dddsample.domain.model.voyage.VoyageNumber;
-import se.citerus.dddsample.domain.model.voyage.VoyageRepository;
+import se.citerus.dddsample.domain.model.voyage.entity.Voyage;
+import se.citerus.dddsample.domain.model.voyage.repository.VoyageRepository;
+import se.citerus.dddsample.domain.model.voyage.vo.VoyageNumber;
 
 @RunWith(SpringRunner.class)
 @ContextConfiguration(value = {"/context-infrastructure-persistence.xml"})

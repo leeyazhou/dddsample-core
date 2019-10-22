@@ -15,15 +15,15 @@ import java.util.Date;
 import org.junit.Before;
 import org.junit.Test;
 
-import se.citerus.dddsample.domain.model.cargo.Cargo;
-import se.citerus.dddsample.domain.model.cargo.CargoRepository;
-import se.citerus.dddsample.domain.model.cargo.RouteSpecification;
-import se.citerus.dddsample.domain.model.cargo.TrackingId;
-import se.citerus.dddsample.domain.model.location.LocationRepository;
-import se.citerus.dddsample.domain.model.location.UnLocode;
-import se.citerus.dddsample.domain.model.voyage.Voyage;
-import se.citerus.dddsample.domain.model.voyage.VoyageNumber;
-import se.citerus.dddsample.domain.model.voyage.VoyageRepository;
+import se.citerus.dddsample.domain.model.cargo.entity.Cargo;
+import se.citerus.dddsample.domain.model.cargo.repository.CargoRepository;
+import se.citerus.dddsample.domain.model.cargo.vo.RouteSpecification;
+import se.citerus.dddsample.domain.model.cargo.vo.TrackingId;
+import se.citerus.dddsample.domain.model.location.repository.LocationRepository;
+import se.citerus.dddsample.domain.model.location.vo.UnLocode;
+import se.citerus.dddsample.domain.model.voyage.entity.Voyage;
+import se.citerus.dddsample.domain.model.voyage.repository.VoyageRepository;
+import se.citerus.dddsample.domain.model.voyage.vo.VoyageNumber;
 import se.citerus.dddsample.infrastructure.persistence.inmemory.LocationRepositoryInMem;
 import se.citerus.dddsample.infrastructure.persistence.inmemory.VoyageRepositoryInMem;
 

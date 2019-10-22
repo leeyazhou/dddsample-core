@@ -12,20 +12,19 @@ import se.citerus.dddsample.config.DDDSampleApplicationContext;
 import javax.annotation.PostConstruct;
 
 @Configuration
-@Import({DDDSampleApplicationContext.class,
-        PathfinderApplicationContext.class})
+@Import({ DDDSampleApplicationContext.class, PathfinderApplicationContext.class })
 @EnableAutoConfiguration
 public class Application {
 
-    @Autowired
-    SampleDataGenerator sampleDataGenerator;
+	@Autowired
+	SampleDataGenerator sampleDataGenerator;
 
-    @PostConstruct
-    public void init() {
-        sampleDataGenerator.generate();
-    }
+	@PostConstruct
+	public void init() {
+		sampleDataGenerator.generate();
+	}
 
-    public static void main(String[] args) throws Exception {
-        SpringApplication.run(Application.class, args);
-    }
+	public static void main(String[] args) throws Exception {
+		SpringApplication.run(Application.class, args);
+	}
 }

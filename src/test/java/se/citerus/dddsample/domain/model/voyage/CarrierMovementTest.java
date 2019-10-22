@@ -9,6 +9,8 @@ import java.util.Date;
 
 import org.junit.Test;
 
+import se.citerus.dddsample.domain.model.voyage.vo.CarrierMovement;
+
 public class CarrierMovementTest {
 
   @Test

@@ -1,7 +1,7 @@
 package se.citerus.dddsample.domain.service;
 
-import se.citerus.dddsample.domain.model.cargo.Itinerary;
-import se.citerus.dddsample.domain.model.cargo.RouteSpecification;
+import se.citerus.dddsample.domain.model.cargo.vo.Itinerary;
+import se.citerus.dddsample.domain.model.cargo.vo.RouteSpecification;
 
 import java.util.List;
 
@@ -11,10 +11,11 @@ import java.util.List;
  */
 public interface RoutingService {
 
-  /**
-   * @param routeSpecification route specification
-   * @return A list of itineraries that satisfy the specification. May be an empty list if no route is found.
-   */
-  List<Itinerary> fetchRoutesForSpecification(RouteSpecification routeSpecification);
+	/**
+	 * @param routeSpecification route specification
+	 * @return A list of itineraries that satisfy the specification. May be an empty
+	 *         list if no route is found.
+	 */
+	List<Itinerary> fetchRoutesForSpecification(RouteSpecification routeSpecification);
 
 }

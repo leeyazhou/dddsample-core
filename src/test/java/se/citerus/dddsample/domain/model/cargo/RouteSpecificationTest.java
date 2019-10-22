@@ -13,8 +13,11 @@ import java.util.Arrays;
 
 import org.junit.Test;
 
-import se.citerus.dddsample.domain.model.voyage.Voyage;
-import se.citerus.dddsample.domain.model.voyage.VoyageNumber;
+import se.citerus.dddsample.domain.model.cargo.vo.Itinerary;
+import se.citerus.dddsample.domain.model.cargo.vo.Leg;
+import se.citerus.dddsample.domain.model.cargo.vo.RouteSpecification;
+import se.citerus.dddsample.domain.model.voyage.entity.Voyage;
+import se.citerus.dddsample.domain.model.voyage.vo.VoyageNumber;
 
 public class RouteSpecificationTest {
 
